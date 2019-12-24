@@ -18,7 +18,7 @@ class Email_model extends CI_Model {
 
 			$email_sub	=	"Password reset request";
 			$email_to	=	$email;
-			$this->do_email($email_msg , $email_sub , $email_to);
+			//$this->do_email($email_msg , $email_sub , $email_to);
 			$this->send_smtp_mail($email_msg , $email_sub , $email_to);
 			return true;
 		}
